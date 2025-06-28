@@ -1,12 +1,12 @@
 # 📊 Gorbchain Indexer Analytics API
 
-A comprehensive analytics API for Solana blockchain data, providing real-time metrics, historical trends, and network insights similar to Dune Analytics.
+A comprehensive analytics API for Gorbchain blockchain data, providing real-time metrics, historical trends, and network insights similar to Dune Analytics.
 
 ## 🚀 Quick Start
 
 Base URL: `http://localhost:3000/api/analytics`
 
-All endpoints return JSON responses with real-time data from the Solana network and indexed blockchain data.
+All endpoints return JSON responses with real-time data from the Gorbchain network and indexed blockchain data.
 
 ## 📈 Available Endpoints
 
@@ -369,11 +369,11 @@ const TransactionChart = ({ timeseriesData }) => {
 
 | Endpoint       | Data Source           | Update Frequency |
 | -------------- | --------------------- | ---------------- |
-| Overview       | Solana RPC + Database | Real-time        |
+| Overview       | Gorbchain RPC + Database | Real-time        |
 | Transactions   | Database              | As indexed       |
 | Users          | Database              | As indexed       |
 | Tokens         | Database              | As indexed       |
-| Network Health | Solana RPC            | Real-time        |
+| Network Health | Gorbchain RPC            | Real-time        |
 | Programs       | Database              | As indexed       |
 
 ## ⚡ Performance Notes
@@ -408,7 +408,7 @@ All endpoints return proper HTTP status codes and error messages:
 
 **Common Error Scenarios:**
 
-- **RPC Connection Failed**: Network health endpoint may fail if Solana RPC is unreachable
+- **RPC Connection Failed**: Network health endpoint may fail if Gorbchain RPC is unreachable
 - **Database Query Failed**: Timeseries endpoints may fail if database is unavailable
 - **Invalid Parameters**: Returns 400 with validation error message
 
@@ -434,12 +434,12 @@ All endpoints log errors to console with full stack traces for debugging.
 ### Environment Variables
 
 ```bash
-# Required for Solana RPC connection
-SOLANA_RPC_URL=https://api.mainnet-beta.solana.com
-SOLANA_RPC_WS_URL=wss://api.mainnet-beta.solana.com
+# Required for Gorbchain RPC connection
+Gorbchain_RPC_URL=https://rpc.Gorbchain.xyz
+Gorbchain_RPC_WS_URL=wss://rpc.Gorbchain.xyz/ws/
 
 # Database connection
-DATABASE_URL=postgresql://user:password@localhost:5432/solana_indexer
+DATABASE_URL=postgresql://user:password@localhost:5432/Gorbchain_indexer
 ```
 
 ### Performance Recommendations
@@ -468,4 +468,4 @@ When adding new analytics endpoints:
 
 ## 📄 License
 
-This analytics API is part of the Solana Indexer project.
+This analytics API is part of the Gorbchain Indexer project.

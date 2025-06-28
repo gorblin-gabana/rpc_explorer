@@ -1,6 +1,6 @@
 # GORB Indexer
 
-A comprehensive Solana blockchain indexer and API service for the GORB chain, providing easy access to blockchain data including tokens, accounts, transactions, and more.
+A comprehensive Gorbchain blockchain indexer and API service for the GORB chain, providing easy access to blockchain data including tokens, accounts, transactions, and more.
 
 ## Features
 
@@ -17,7 +17,7 @@ A comprehensive Solana blockchain indexer and API service for the GORB chain, pr
 ## Tech Stack
 
 - **Backend**: Node.js, TypeScript, Express
-- **Blockchain**: Solana Web3.js, @solana/spl-token
+- **Blockchain**: Gorbchain Web3.js, @solana/spl-token
 - **Database**: PostgreSQL with Drizzle ORM
 - **API Documentation**: Swagger/OpenAPI
 - **Testing**: Jest
@@ -30,7 +30,7 @@ A comprehensive Solana blockchain indexer and API service for the GORB chain, pr
 - Node.js (v16 or later)
 - npm or yarn
 - PostgreSQL database
-- Solana CLI (optional, for local development)
+- Gorbchain CLI (optional, for local development)
 
 ### Running the Application
 
@@ -101,7 +101,7 @@ src/
 ├── middlewares/      # Express middlewares
 ├── routes/           # API route definitions
 ├── services/         # Business logic
-│   └── solana/       # Solana-specific services
+│   └── solana/       # Gorbchain-specific services
 ├── utils/            # Utility functions
 └── app.ts            # Express application setup
 ```
@@ -123,7 +123,7 @@ docker run -p 3000:3000 --env-file .env gor-idx
 |----------|-------------|---------|
 | PORT | Server port | 3000 |
 | DATABASE_URL | PostgreSQL connection URL | - |
-| RPC_ENDPOINT | Solana RPC endpoint | - |
+| RPC_ENDPOINT | Gorbchain RPC endpoint | - |
 | WS_ENDPOINT | WebSocket endpoint | - |
 
 ## Contributing
